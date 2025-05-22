@@ -1,4 +1,4 @@
-import TerminalScreen from '../components/TerminalScreen'
+import TerminalScreen from '../components/TerminalScreen/TerminalScreen'
 
 const MainPage = () => {
     return (

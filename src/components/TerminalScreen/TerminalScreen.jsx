@@ -1,8 +1,4 @@
-import styled from 'styled-components';
-
-const Wrapper = styled.div`
-    background-color: blue;
-`
+import { Wrapper } from './TerninalScreen.styles'
 
 const TerminalScreen = () => {
     return (
