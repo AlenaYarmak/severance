@@ -5,8 +5,8 @@ const TerminalScreen = ({ cells, rows, columns }) => {
     return (
         <Wrapper rows={rows} columns={columns}>
             {Array.from({ length: cells }).map((_, index) => {
-                const offsetX = 3 + Math.random() * 2
-                const offsetY = 3 + Math.random() * 2
+                const offsetX = 1 + Math.random() * 4
+                const offsetY = 1 + Math.random() * 4
                 return (
                     <Number
                         offsetX={offsetX}
