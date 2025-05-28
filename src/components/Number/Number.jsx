@@ -1,8 +1,8 @@
 import { NumberStyles } from './Number.styles'
 
-const Number = () => {
+const Number = ({ offsetX, offsetY, animationDelay}) => {
     return (
-        <NumberStyles>
+        <NumberStyles offsetX={offsetX} offsetY={offsetY} animationDelay={animationDelay}>
             2
         </NumberStyles>
     )
