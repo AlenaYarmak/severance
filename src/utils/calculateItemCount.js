@@ -1,3 +1,3 @@
-export const calculateItemCount = (x, y) => {
+export const calculateItemsCount = (x, y) => {
     return x * y
 }
