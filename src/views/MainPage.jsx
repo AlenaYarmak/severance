@@ -1,10 +1,10 @@
 import TerminalScreen from '../components/TerminalScreen/TerminalScreen'
 
-const MainPage = () => {
+const MainPage = ({ cells }) => {
     return (
         <div>
             <h1>Main Page title</h1>
-            <TerminalScreen />
+            <TerminalScreen cells={cells}/>
         </div>
     )
 }

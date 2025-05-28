@@ -1,11 +1,12 @@
 import { Wrapper } from './TerninalScreen.styles'
 import Number from '../Number/Number'
 
-const TerminalScreen = () => {
+const TerminalScreen = ({ cells }) => {
     return (
         <Wrapper>
-            <p>test terminal screen</p>
-            <Number />
+            {Array.from({ length: cells }).map((_, index) => (
+                <Number key={index} />
+            ))}
         </Wrapper>
     )
 }
