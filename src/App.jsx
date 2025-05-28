@@ -9,11 +9,12 @@ const App = () => {
   const columns = 15
   const cellsAmount = calculateItemsCount(rows, columns)
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
+  console.log(randomArrayNumbers)
 
   return (
     <>
      <h1>Severance</h1>
-     <MainPage cells={cellsAmount} rows={rows} columns={columns}/>
+     <MainPage cellsAmount={randomArrayNumbers} rows={rows} columns={columns}/>
     </>
   )
 }
