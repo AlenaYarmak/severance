@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
      <h1>Severance</h1>
-     <MainPage cells={cellsAmount}/>
+     <MainPage cells={cellsAmount} rows={rows} columns={columns}/>
     </>
   )
 }
