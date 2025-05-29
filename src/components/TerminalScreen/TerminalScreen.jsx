@@ -9,8 +9,8 @@ const TerminalScreen = ({ cellsAmount, rows, columns }) => {
                 const offsetY = 1 + Math.random() * 4
                 return (
                     <Number
-                        key={index}
-                        value={element}
+                        key={element.index}
+                        value={element.number}
                         offsetX={offsetX}
                         offsetY={offsetY}
                         animationDelay={Math.random() * 6}

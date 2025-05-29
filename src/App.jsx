@@ -2,6 +2,7 @@ import MainPage from './views/MainPage'
 import { calculateItemsCount } from './utils/calculateItemCount'
 import { getRandomArrayNumbers } from './utils/getRandomArrayNumbers'
 import { getRandomNumber } from './utils/getRandomNumber'
+import { getNearNumbers } from './utils/getNearNumbers'
 
 const App = () => {
 
@@ -11,7 +12,8 @@ const App = () => {
   const cellsAmount = calculateItemsCount(rows, columns)
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
   const specialNumber = getRandomNumber(columns, rows)
-  console.log(specialNumber)
+  const arrayWithSpecialNumbers = getNearNumbers(specialNumber)
+  console.log(randomArrayNumbers)
 
   return (
     <>
