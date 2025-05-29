@@ -1,6 +1,7 @@
 import MainPage from './views/MainPage'
 import { calculateItemsCount } from './utils/calculateItemCount'
 import { getRandomArrayNumbers } from './utils/getRandomArrayNumbers'
+import { getRandomNumber } from './utils/getRandomNumber'
 
 const App = () => {
 
@@ -9,7 +10,8 @@ const App = () => {
   const columns = 15
   const cellsAmount = calculateItemsCount(rows, columns)
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
-  console.log(randomArrayNumbers)
+  const specialNumber = getRandomNumber(columns, rows)
+
 
   return (
     <>
