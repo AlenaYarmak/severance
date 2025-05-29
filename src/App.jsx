@@ -13,13 +13,19 @@ const App = () => {
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
   const specialNumber = getRandomNumber(columns, rows)
   const arrayWithSpecialNumbers = getNearNumbers(specialNumber, columns)
-  console.log(randomArrayNumbers)
-  console.log(arrayWithSpecialNumbers)
+
+  const matchesNumbers = randomArrayNumbers.filter(
+    obj => arrayWithSpecialNumbers.includes(obj.index))
 
   return (
     <>
      <h1>Severance</h1>
-     <MainPage cellsAmount={randomArrayNumbers} rows={rows} columns={columns}/>
+     <MainPage 
+      cellsAmount={randomArrayNumbers}
+      matchesNumbers={matchesNumbers}
+      rows={rows} 
+      columns={columns}
+      />
     </>
   )
 }

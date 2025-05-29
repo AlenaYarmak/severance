@@ -1,10 +1,15 @@
 import TerminalScreen from '../components/TerminalScreen/TerminalScreen'
 
-const MainPage = ({ cellsAmount, rows, columns }) => {
+const MainPage = ({ cellsAmount, matchesNumbers, rows, columns }) => {
     return (
         <div>
             <h1>Main Page title</h1>
-            <TerminalScreen cellsAmount={cellsAmount} rows={rows} columns={columns}/>
+            <TerminalScreen 
+                cellsAmount={cellsAmount}
+                matchesNumbers={matchesNumbers}
+                rows={rows} 
+                columns={columns}
+            />
         </div>
     )
 }
