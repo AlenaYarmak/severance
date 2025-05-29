@@ -11,7 +11,7 @@ const App = () => {
   const cellsAmount = calculateItemsCount(rows, columns)
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
   const specialNumber = getRandomNumber(columns, rows)
-
+  console.log(specialNumber)
 
   return (
     <>
