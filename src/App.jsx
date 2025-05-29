@@ -12,8 +12,9 @@ const App = () => {
   const cellsAmount = calculateItemsCount(rows, columns)
   const randomArrayNumbers = getRandomArrayNumbers(cellsAmount)
   const specialNumber = getRandomNumber(columns, rows)
-  const arrayWithSpecialNumbers = getNearNumbers(specialNumber)
+  const arrayWithSpecialNumbers = getNearNumbers(specialNumber, columns)
   console.log(randomArrayNumbers)
+  console.log(arrayWithSpecialNumbers)
 
   return (
     <>
