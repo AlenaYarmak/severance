@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
     width: 90vw;
     height: 70vh;
     display: grid;
-    grid-template-columns: ${({ columns }) => `repeat(${columns}, 1fr)`};
-    grid-template-rows: ${({ rows }) => `repeat(${rows}, 1fr)`}
+    grid-template-columns: ${({ columns }) => `repeat(${columns}, minmax(40px, 1fr))`};
+    grid-template-rows: ${({ rows }) => `repeat(${rows}, minmax(40px, 1fr))`}
 `

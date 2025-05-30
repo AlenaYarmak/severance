@@ -2,7 +2,12 @@ import { useState } from 'react'
 import { Wrapper } from './TerninalScreen.styles'
 import Number from '../Number/Number'
 
-const TerminalScreen = ({ cellsAmount, matchesNumbers, rows, columns }) => {
+const TerminalScreen = ({ 
+    cellsAmount, 
+    matchesNumbers, 
+    rows, 
+    columns 
+}) => {
     const [isMatchHovered, setIsMatchHovered] = useState(false);
 
     const handleMouseEnter = (isMatch) => {
@@ -16,19 +21,29 @@ const TerminalScreen = ({ cellsAmount, matchesNumbers, rows, columns }) => {
             setIsMatchHovered(false);
         }
     };
+
+    const [offsets] = useState(() => 
+    cellsAmount.map(() => ({
+        offsetX: Math.floor(1 + Math.random() * 8),
+        offsetY: Math.floor(1 + Math.random() * 8),
+        animationDelay: Math.random() * 6
+    }))
+
+);
+
+console.log(offsets);
+
     return (
         <Wrapper rows={rows} columns={columns}>
             {cellsAmount.map((element, index) => {
-                const offsetX = 1 + Math.random() * 4
-                const offsetY = 1 + Math.random() * 4
                 const isMatch = matchesNumbers.some((obj) => obj.index === element.index);
                 return (
                     <Number
                         key={element.index}
-                        value={element.number}
-                        offsetX={offsetX}
-                        offsetY={offsetY}
-                        animationDelay={Math.random() * 6}
+                        value={element.index}
+                        offsetX={offsets[index].offsetX}
+                        offsetY={offsets[index].offsetY}
+                        animationDelay={offsets[index].animationDelay}
                         index={index}
                         isMatch={isMatch}
                         isMatchHovered={isMatchHovered}
@@ -37,6 +52,9 @@ const TerminalScreen = ({ cellsAmount, matchesNumbers, rows, columns }) => {
                     />
                 )
             })}
+        {matchesNumbers.map((element, index) => (
+            <p>{element.index}</p>
+        ))}
         </Wrapper>
     )
 }

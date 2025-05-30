@@ -1,6 +1,7 @@
-import { NumberStyles } from './Number.styles'
+import { memo } from 'react'
+import { NumberStyles, InnerNumber } from './Number.styles'
 
-const Number = ({ 
+const Number = memo(({ 
     offsetX, 
     offsetY, 
     animationDelay, 
@@ -12,17 +13,26 @@ const Number = ({
 }) => {
     return (
         <NumberStyles 
-            offsetX={offsetX} 
-            offsetY={offsetY} 
             animationDelay={animationDelay}
-            isMatch={isMatch}
-            isMatchHovered={isMatchHovered}
+            offsetX={offsetX} 
+            offsetY={offsetY}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
-            {value}
+            <InnerNumber
+                isMatch={isMatch}
+                isMatchHovered={isMatchHovered}
+                >
+                {value}
+            </InnerNumber>
         </NumberStyles>
     )
-}
+}, (prevProps, nextProps) => {
+    return (
+        prevProps.isMatch === nextProps.isMatch &&
+        prevProps.isMatchHovered === nextProps.isMatchHovered &&
+        prevProps.value === nextProps.value
+    )
+})
 
 export default Number;
