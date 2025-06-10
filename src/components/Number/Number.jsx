@@ -35,4 +35,4 @@ const Number = memo(({
     )
 })
 
-export default Number;
+export default Number
