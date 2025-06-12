@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Wrapper, Container } from './TerninalScreen.styles'
 import Number from '../Number/Number'
 import Line from '../Line/Line'
+import Title from '../Title/Title'
 
 const TerminalScreen = ({
     cellsAmount,
@@ -36,6 +37,7 @@ const TerminalScreen = ({
 
     return (
         <Container>
+            <Title />
             <Line />
             <Line />
             <Wrapper rows={rows} columns={columns}>
