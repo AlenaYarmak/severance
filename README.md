@@ -1,12 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Severance Terminal
 
-Currently, two official plugins are available:
+Inspired by the unsettling world of **Severance (Apple TV+)**, this project recreates the iconic terminal interface with **floating numbers**—a visual nod to the mysterious data refinement work of Lumon Industries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> “We’re all different people at work.”  
+> — Severance
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Concept
+
+This project is a creative exploration of a fictional data-sorting terminal like the ones used by the *Macrodata Refinement* team. The UI is minimalist, eerie, and hypnotic—numbers float, shift, and sometimes react, echoing the surreal disconnection of severed consciousness.
+### Key Features (in progress)
+- [x] Terminal-style interface (retro CRT-inspired)
+- [x] Randomly floating/moving digits (Matrix-style meets Severance)
+- [ ] Interactive mode (planned)
+- [ ] Sound FX toggle (planned)
+- [ ] Secret triggers & easter eggs (planned)
+
+
+## 🚧 Project Status
+
+This project is actively in development. Expect glitches, placeholder visuals, and minimal interaction—for now.
+
+
+## 🛠 Tech Stack
+
+- React – Component-based UI for modular structure
+- Styled Components – Scoped styling using tagged template literals
+- JavaScript (ES6+) – Core logic and interaction
+
+
+## 🧩 Inspiration
+
+- *Severance* by Dan Erickson  
+- CRT terminals / retrofuturism  
+- Experimental UI / artful discomfort 
+
+
+## ⚠️ Disclaimer
+
+This is a fan-made project with no affiliation to Apple, Severance, or Lumon Industries. Just an admirer of good sci-fi.
