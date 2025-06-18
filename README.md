@@ -1,5 +1,5 @@
 
-#  Severance Terminal
+#  🧮 Severance Terminal
 
 Inspired by the unsettling world of **Severance (Apple TV+)**, this project recreates the iconic terminal interface with **floating numbers**—a visual nod to the mysterious data refinement work of Lumon Industries.
 
